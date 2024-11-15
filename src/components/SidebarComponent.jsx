@@ -5,7 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
-const Sidebar = () => {
+const SidebarComponent = () => {
   return (
     <List style={{ padding: "10px" }}>
       {/* Área do Candidato */}
@@ -54,4 +54,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarComponent;

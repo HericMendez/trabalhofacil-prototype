@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Box, Drawer, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Sidebar from "./SideBar";
 import { Outlet } from "react-router-dom"; // Renders nested routes
-
+import Sidebar from "./SidebarComponent";
 const MainLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Sidebar começa escondida no modo mobile
 
