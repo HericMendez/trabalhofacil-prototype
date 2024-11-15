@@ -5,13 +5,12 @@ import SearchIcon from "@mui/icons-material/Search";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
-    <List style={{  padding: "10px" }}>
+    <List style={{ padding: "10px" }}>
       {/* Área do Candidato */}
       <div>
-        
-      <ListItem button component={Link} to="/home">
+        <ListItem button component={Link} to="/home">
           <HomeIcon style={{ marginRight: "10px" }} />
           <ListItemText primary="Página Inicial" />
         </ListItem>
@@ -22,7 +21,7 @@ const Sidebar = () => {
           <AssignmentIcon style={{ marginRight: "10px" }} />
           <ListItemText primary="Meu Currículo" />
         </ListItem>
-        
+
         <ListItem button component={Link} to="/candidate">
           <SearchIcon style={{ marginRight: "10px" }} />
           <ListItemText primary="Buscar Vagas" />
@@ -32,8 +31,6 @@ const Sidebar = () => {
           <SearchIcon style={{ marginRight: "10px" }} />
           <ListItemText primary="Ver vagas aplicadas" />
         </ListItem>
-
-
       </div>
 
       <Divider style={{ margin: "10px 0" }} />
@@ -41,7 +38,8 @@ const Sidebar = () => {
       {/* Área do Empregador */}
       <div>
         <h3 style={{ paddingLeft: "10px", fontSize: "16px", color: "#333" }}>
-          <BusinessCenterIcon style={{ marginRight: "8px" }} /> Área do Empregador
+          <BusinessCenterIcon style={{ marginRight: "8px" }} /> Área do
+          Empregador
         </h3>
         <ListItem button component={Link} to="/employer">
           <BusinessCenterIcon style={{ marginRight: "10px" }} />
@@ -56,4 +54,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;
